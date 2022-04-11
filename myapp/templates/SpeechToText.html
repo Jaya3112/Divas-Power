@@ -1,0 +1,65 @@
+{% extends 'features.html' %}
+
+{% block title %}Speech To Text{% endblock title %}
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <title>Speech To Text</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/SpeechToText.css" />
+</head>
+<body>
+<header>
+<div class="speaker">
+    <audio id = "intro">
+            <source src="/static/Images/Intro.mp3" type="audio/mpeg">
+        </audio>
+    <form action="{% url 'SpeechToText' %}" method="post">
+      {% csrf_token %}
+        {% if messages %}
+        {% for message in messages %}
+             {% if message.tags == 'success' %}
+        <center id = "my_text" style="color: black">{{ message }}</center>
+            {% elif message.tags == 'warning' %}
+        <center id = "my_text1" style="color: #cc3333">{{ message }}</center>
+            {% elif message.tags == 'error' %}
+        <center id="my_text2" style="color: #cc3333">  {{ message }} </center>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+        <div class="start_button">
+        <button style="position: absolute;left:660px ; top: 85px" id = "strt" type="submit" class="btn btn-outline-info" name='start' value={{excel_path}}>START</button>
+        </div>
+    </form>
+      <button type = "submit" onclick="st()" id="sbmt" style="position: absolute;left: 660px; top: 500px" class="btn btn-outline-info">SUBMIT</button>
+</div>
+</header>
+<script>
+    if(localStorage.getItem("counter") == 0){
+        var ad = document.getElementById("intro");
+        ad.play();
+    }
+    localStorage.setItem("counter",localStorage.getItem("counter") + 1)
+    function st(){
+        document.getElementById("my_text").innerHTML = "";
+        document.getElementById("my_text1").innerHTML = "";
+        document.getElementById("my_text2").innerHTML = "";
+    }
+</script>
+<script src="/static/js/annyang.min.js"></script>
+<script>
+if (annyang) {
+  var commands = {
+    'start': function() {
+      document.getElementById("strt").click();
+    },
+      'submit': function() {
+      document.getElementById("sbmt").click();
+    }
+  };
+  annyang.addCommands(commands);
+  annyang.start();
+}
+</script>
+</body>
+{% endblock body %}

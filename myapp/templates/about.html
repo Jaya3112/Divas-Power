@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}
+{% block body %}
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/css/about.css">
+    <body>
+        <header>
+            <div class="logo1">
+            <img style="border-radius: 50%" src="/static/Images/logo1.jpg">
+                <div class="text1" style="color: white">
+                    <p>Hand Gestures<br>This feature can recognize human gestures<br>and provides a new way for people with
+                        <br>physical disabilities to interact with <br>computers.This will allow our users to
+                        <br>choose to interact with gesture-controlled<br>technology based on their individual needs
+                    </p>
+                </div>
+            </div>
+
+            <div class="logo2">
+            <img style="border-radius: 50%" src="/static/Images/logo5.jpg">
+                 <div class="text2" style="color: white">
+                    <p>
+                            Eye Movement
+                        <br>We found it to be a novel idea to control<br>
+                            computer mouse cursor using human eyes movement.<br>
+                            This feature controls mouse moving by automatically<br>
+                            affecting the position where eyesight focused.So<br>
+                            users can now control the computer without worrying<br>
+                            about their body condition.
+                    </p>
+                </div>
+
+            </div>
+
+
+             <div class="logo3">
+            <img style="border-radius: 50%" src="/static/Images/logo3.jpg">
+                   <div class="text3" style="color: white">
+                    <p>
+                        Speech To Text
+                       <br>This is a feature that converts words that<br>
+                           are spoken in real time or audio files to<br>
+                           electronic written text to support the users<br>
+                           with hearing aids and increased demonstration<br>
+                           of learning and independence.
+                    </p>
+                </div>
+             </div>
+
+            <div class="logo4">
+            <img style="border-radius: 50%" src="/static/Images/logo4.jpg">
+                <div class="text4" style="color: white">
+                    <p>
+                        Text To Speech
+                       <br>This feature can help people with vision<br>
+                        impairment and learning disabilities to listen<br>
+                        to written words from  e-books, news articles<br>
+                        and many such sources,thereby enhancing the<br>
+                        overall learning and interaction experience.
+                    </p>
+                </div>
+            </div>
+           <div class="register" style="color: green">
+               <a style="position: absolute;left:20%; right:20%; bottom: -1050px">For using the features of the above categories please register to our website</a>
+            <ul class="button">
+                <a style="position: absolute; left: 40%; right: 40%; bottom: -1120px;" class="btn btn-outline-success" href="/SignUp" type="button">Register</a>
+            </ul>
+           </div>
+
+        </header>
+        </body>
+    </head>
+{% endblock body %}

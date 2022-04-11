@@ -1,0 +1,19 @@
+{% extends 'features.html' %}
+{% block title %}Text To Speech{% endblock title %}
+{% block body %}
+<head xmlns="http://www.w3.org/1999/html">
+    <title>Text To Speech</title>
+    <link rel="stylesheet"  type="text/css" href="/static/css/TextToSpeech.css">
+  <body>
+    <header>
+      <div class="form_1">
+          <form method="get" action="/inter">
+          <center><h3>Text To Speech</h3></center>
+              <center><textarea <input class="box mt-0 mb-2" type="text" name="input_text" placeholder="Please enter your text here"></textarea></center>
+              <center><input type="submit"></center>
+          </form>
+      </div>
+    </header>
+  </body>
+</head>
+{% endblock body %}
