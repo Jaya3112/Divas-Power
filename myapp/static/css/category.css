@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+    background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(cat2.jpg);
+    background-size: cover;
+    background-position: center;
+    height:80vh;
+}
