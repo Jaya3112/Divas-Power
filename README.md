@@ -19,10 +19,8 @@ CSS
 Javascript
 
 ## Libraries and Packages 
-
-```python
 imported libraries using:
-
+```python
 pip install manage
 pip install django
 pip install django.shortcuts
