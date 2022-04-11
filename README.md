@@ -75,7 +75,7 @@ Further if you wish to contact us you could Visit the Contact Us page and fill i
 ## Project Status
 
 Due to issues in version we could not incorporate the files of 
-EyeMovements in the website.This file is present in the 
+Eye Movements and Hand Gestures in the website.These files have been provided in the
 repository.
 
 
