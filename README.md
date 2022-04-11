@@ -38,10 +38,10 @@ pip install pyaudio
 pip install math
 pip install numpy
 pip install cv2
-
+```
 Note: playsound version 1.2.2 and pyttsx3 version 2.71 have been used.
 
-```
+
 ## Features
 ```
 Speech to Text
@@ -71,11 +71,11 @@ Further if you wish to contact us you could Visit the Contact Us page and fill i
 
 ```
 ## Project Status
-```
+
 Due to issues in version we could not incorporate the files of 
 EyeMovements in the website.This file is present in the 
 repository.
-```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss how it 
