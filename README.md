@@ -7,7 +7,7 @@ This is a website designed aiming to help the specially abled people. We have tr
  install pycharm ide (3.8 ) from https://www.jetbrains.com/pycharm/download and clone the repository 
 
 ```bash
-git clone 
+git clone https://github.com/Jaya3112/Divas-Power.git
 ```
 ## Built with
 python3
