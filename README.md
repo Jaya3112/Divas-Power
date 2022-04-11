@@ -40,9 +40,9 @@ pip install numpy
 pip install cv2
 ```
 Note: playsound version 1.2.2 and pyttsx3 version 2.71 have been used.
-```
-For face Shape predictor:
 
+For face Shape predictor:
+```
 https://github.com/tzutalin/dlib-android/blob/master/data/shape_predictor_68_face_landmarks.dat
 ```
 
