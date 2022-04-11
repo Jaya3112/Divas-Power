@@ -82,7 +82,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 could be resolved.
 
 ## Acknowledgements
+For pyaudio error:
+
 https://www.youtube.com/watch?v=Z1fEd-TP4zY
+
+For js file in static/ js/:
+
+https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js
 
 
 
